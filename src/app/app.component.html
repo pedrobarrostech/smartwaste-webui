@@ -1,0 +1,14 @@
+<div class="app-wrapper">
+    
+     <search></search> 
+
+     <map></map>
+
+    <div [ngClass]="{ 'active' : showMenu }" class="menu-wrapper z1">        
+        <router-outlet></router-outlet>
+    </div>    
+
+    <notification></notification>
+
+    <bottom-navigation (onNavigationClick)="onNavigationClick2($event)"></bottom-navigation>
+</div>

@@ -1,0 +1,42 @@
+header {
+    background-color: orange;
+    color: #ffffff;
+    padding: 15px;
+    display: flex;
+}
+
+    header h1 {
+        margin: 0;
+    }
+
+    header button {
+        float: right;
+    }
+
+@media screen and (max-width: 600px) {
+    .menu-wrapper {
+        width: 100% !important;
+        border-radius: 0px 0px 0px 0px !important;
+    }
+}
+
+.menu-wrapper {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 600px;    
+    border-radius: 5px 0px 0px 0px;
+    background: white;
+    padding-bottom: 65px;
+    overflow: auto;
+    word-break: break-word;
+    transition: all 0.5s;
+}
+
+    .menu-wrapper.active {        
+        height: 60%;
+    }
+
+    .menu-wrapper:not(.active) {        
+        height: 0%;
+    }

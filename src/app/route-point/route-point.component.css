@@ -1,0 +1,26 @@
+﻿.route-item {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.route-item:hover{
+    background: #ECEFF1;
+}
+
+    .route-item .route-title {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+.route-img {    
+    width: 40px;
+    height: 46px;
+    float: left;
+    margin-right: 10px;
+}
+
+.route-img img{
+    width: 40px;
+}

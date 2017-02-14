@@ -1,0 +1,37 @@
+﻿@media screen and (max-width: 600px) {
+    .notification {
+        width: 100% !important;
+    }
+}
+
+.notification {
+    position: absolute;        
+    right: 0;
+    color: #ffffff;
+    width: 600px;
+    background: #4a4a4a;
+    transition: linear 0.3s;    
+    padding: 15px;
+}
+
+    .notification.active {        
+        bottom: 65px;
+        opacity: 1;
+    }
+
+    .notification:not(.active) {        
+        bottom: 0px;
+        opacity: 0;
+    }
+
+.buttons {
+    float: right;
+}
+
+    .buttons button {
+        background: none;
+        border: none;
+        color: #4DB6AC;
+        font-weight: bold;
+        text-transform: uppercase;
+    }

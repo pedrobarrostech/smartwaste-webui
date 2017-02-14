@@ -1,0 +1,6 @@
+﻿<div class="notification" [ngClass]="{ 'active' : showNotification }">
+    <div *ngFor="let b of showingNotification.buttons" class="buttons">
+        <button (click)="b.onClick()">{{b.text}}</button>        
+    </div>
+    <span>{{showingNotification.title}}</span>
+</div>
