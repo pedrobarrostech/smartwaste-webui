@@ -1,6 +1,6 @@
 {
-  "name": "dojo-angular2",
-  "version": "0.0.0",
+  "name": "smartwaste-webui",
+  "version": "1.0.0",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {

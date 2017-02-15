@@ -1,5 +1,7 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 
+import { BottomNavigationButton } from "../_shared/_models/BottomNavigationButton.model";
+
 @Component({
     selector: 'bottom-navigation',
     templateUrl: './bottom-navigation.template.html',
@@ -12,7 +14,7 @@ export class BottomNavigationComponent {
 
     constructor() {
         this.AddButton(new BottomNavigationButton('map', 'Map', this.onClick, "/", false));
-        this.AddButton(new BottomNavigationButton('directions', 'Routes', this.onClick, "/Routes", true));
+        this.AddButton(new BottomNavigationButton('directions', 'Routes', this.onClick, "/routes", true));
         this.AddButton(new BottomNavigationButton('history', 'History', this.onClick, "", true));
         this.AddButton(new BottomNavigationButton('account_circle', 'Account', this.onClick, "", true));
     }
@@ -31,23 +33,3 @@ export class BottomNavigationComponent {
     }.bind(this);
 }
 
-export class BottomNavigationButton {
-    public icon: String;
-    public text: String;
-    public link: String;
-    public showMenu: boolean;
-    public onClick: any;
-    public active: boolean;
-
-    constructor(_icon: String, _text: String, onClick: Function, _link: String, _showMenu: boolean) {
-        this.icon = _icon;
-        this.text = _text;
-        this.link = _link;
-        this.onClick = onClick;
-        this.showMenu = _showMenu;
-    }
-
-    setActive = function (active: boolean) {
-        this.active = active;
-    }
-}

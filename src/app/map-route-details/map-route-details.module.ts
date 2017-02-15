@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 
 import { MapRouteDetailsComponent } from './map-route-details.component';
+import { RoutePointComponent } from '../route-point/route-point.component';
 
 //import { MapRouteDetailsService } from '../_shared/_services/MapRouteDetails.service';
 
@@ -10,7 +11,7 @@ import { RouterModule }   from '@angular/router';
 
 @NgModule({
   declarations: [
-    //MapRouteDetailsComponent
+    //MapRouteDetailsComponent,
   ],
   imports: [
       FormsModule,

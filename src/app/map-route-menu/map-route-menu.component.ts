@@ -8,6 +8,4 @@ import { Component } from "@angular/core"
 
 export class MapRouteMenuComponent {
     title = "TODO: We need to list here the user routes.";
-
-
 }
